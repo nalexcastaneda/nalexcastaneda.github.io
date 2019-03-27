@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Meta -->
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Tab Title -->
 	<title>Portfolio - Nestor Alexander</title>
+	<!-- Linked CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- Linked JS -->
+	<script src='js/main.js'></script>
+	<!-- More CSS -->
 	<style type="text/css">
 	body{
-		background-color: rgb(110, 114, 122);
+		background-color: #1c1919;
 	}
-	</style>
+</style>
 </head>
-<body>
-<div class="dropdown">
-  <button class="dropbtn">MENU</button>
-  <div class="dropdown-content">
-    <a href="#Home">HOME</a>
-    <a href="#Gallery">GALLERY</a>
-    <a href="#About">ABOUT</a>
-  </div>
-</div>
+<!-- Start typing -->
+<body onload="incrementCount(10)">
+	<div class="main_container" id="id_main_container">
+		<div class="container_inner" id="display_div_id">
+		</div>
+	</div>
 
+	<!-- Drop-down Menu -->
+	<div class="dropdown">
+		<button class="dropbtn">MENU</button>
+		<div class="dropdown-content">
+			<a href="#Home">HOME</a>
+			<a href="#Gallery">GALLERY</a>
+			<a href="#Works">WORKS</a>
+			<a href="#About">ABOUT</a>
+		</div>
+	</div>
+
+	<!-- Headers -->
 	<h1 class="headers">My Portfolio - Nestor Alexander</h1>
 	<h3 class="headers">Web Development</h3>
 	<p class="pgrph"> Welcome to my Portfolio!<br>
 		Here you will find the projects I have developed and a gallery of my designs. If you are intersted in any of my works you can contact me in Social Media. 😉
 	</p>
+	<!-- Number of visitors counter -->
+	<div id="cntr" class="counter", "align-text-bottom"> 
+		The number of visitors is : 
+		<span>0</span>
+	</div>
 </body>
 </html>
