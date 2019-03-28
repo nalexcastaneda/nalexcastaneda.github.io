@@ -10,7 +10,16 @@
 	<!-- Linked CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Linked JS -->
-	<script src='js/main.js'></script>
+	<script src='js/main.js'> 
+		function counter_fn() {
+			var counter = document.getElementById("cntr");
+			var count = 0;
+			count = parseInt(counter.innerHTML);
+			count = count + 1;
+			counter.innerHTML = count;
+		}
+		window.onload = counter_fn;
+	</script>
 	<!-- More CSS -->
 	<style type="text/css">
 	body{
@@ -19,33 +28,29 @@
 </style>
 </head>
 <!-- Start typing -->
-<body onload="incrementCount(10)">
-	<div class="main_container" id="id_main_container">
-		<div class="container_inner" id="display_div_id">
-		</div>
-	</div>
+<body>
 
 	<!-- Drop-down Menu -->
 	<div class="dropdown">
 		<button class="dropbtn">MENU</button>
 		<div class="dropdown-content">
 			<a href="#Home">HOME</a>
-			<a href="#Gallery">GALLERY</a>
-			<a href="#Works">WORKS</a>
-			<a href="#About">ABOUT</a>
+			<a href="../gallery.html">GALLERY</a>
+			<a href="../works.html">WORKS</a>
+			<a href="../about.html">ABOUT</a>
 		</div>
 	</div>
 
 	<!-- Headers -->
 	<h1 class="headers">My Portfolio - Nestor Alexander</h1>
 	<h3 class="headers">Web Development</h3>
-	<p class="pgrph"> Welcome to my Portfolio!<br>
+	<p class="pgrph" id="Home"> Welcome to my Portfolio!<br>
 		Here you will find the projects I have developed and a gallery of my designs. If you are intersted in any of my works you can contact me in Social Media. 😉
 	</p>
 	<!-- Number of visitors counter -->
-	<div id="cntr" class="counter", "align-text-bottom"> 
-		The number of visitors is : 
-		<span>0</span>
+	<br><br><br><br><br><br><br><br><br><br>
+	<div class="counter">
+		<p>The number of visitors is : <span id="cntr">0</span></p>
 	</div>
 </body>
 </html>
