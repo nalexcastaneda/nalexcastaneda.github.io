@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- Meta -->
-	<meta charset='utf-8'>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Tab Title -->
@@ -10,15 +10,8 @@
 	<!-- Linked CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Linked JS -->
-	<script src='js/main.js'> 
-		function counter_fn() {
-			var counter = document.getElementById("cntr");
-			var count = 0;
-			count = parseInt(counter.innerHTML);
-			count = count + 1;
-			counter.innerHTML = count;
-		}
-		window.onload = counter_fn;
+	<script src="js/main.js"> 
+		
 	</script>
 	<!-- More CSS -->
 	<style type="text/css">
@@ -50,7 +43,9 @@
 	<!-- Number of visitors counter -->
 	<br><br><br><br><br><br><br><br><br><br>
 	<div class="counter">
-		<p>The number of visitors is : <span id="cntr">0</span></p>
+	  <blockquote>
+	    <p><strong>The number of visitors is : <span id="cntr">0</span></strong></p>
+	  </blockquote>
 	</div>
 </body>
 </html>
