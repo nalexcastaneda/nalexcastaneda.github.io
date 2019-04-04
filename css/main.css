@@ -3,6 +3,10 @@
 	src: url('../fonts/simplifica.ttf') format('truetype'); 
 	font-weight: normal;
 }
+.imgh{
+	position: relative;
+	align-content: flex-end;
+}
 .headers{
 	font-family: "simplifica";
 	text-align: center;
