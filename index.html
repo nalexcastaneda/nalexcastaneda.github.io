@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--Themes Meta-->
+	<!--Themes Meta-->
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#1c1919">
  
@@ -30,44 +30,115 @@ body {
     background-color: #1c1919;
 }
 </style>
-</head>
-<!-- Start typing -->
-<body>
+<!-- End of Styles -->
 
-<!-- Drop-down Menu -->
-<div class="dropdown" style="float: right;">
-  <button class="dropbtn">MENU</button>
-  <div class="dropdown-content" style="right:0;"> 
-	  <a href="#Home">HOME</a> 
-	  <a href="../gallery.html">GALLERY</a> 
-	  <a href="../works.html">WORKS</a> 
-	  <a href="../about.html">ABOUT</a> </div>
-</div>
-<img src="images/My Portfolio.png" alt="logo" width="250"/>
+<!-- Linked Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700" />
+	<link rel="preload" href="https://apis.google.com/js/platform.js" as="script" />
+	<title>Portfolio</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.3.0/material.teal-red.min.css" />
+	<!--Preload for fancy browsers-->
+	<link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" />
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700" as="style" />
+	<script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.3.0/material.min.js"></script>
+	<meta charset="utf-8">
+	<!-- Descriptions -->
+	<meta name="apple-mobile-web-app-title" content="Portfolio - Nestor Alexander">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="programming, coder, coding, code, programmer, css, javascript, php, java">
+	<meta name="description" content="Hello, This is my Portfolio where I will be documenting my projects.">
+	<link rel="publisher" href="https://plus.google.com/+NestorAlexanderCastanedaPadron">
+	<html itemscope itemtype="http://schema.org/Organization">
+	<meta itemprop="name" content="Nestor Alexander">
+	<meta itemprop="description" content="I created this website for the porpouse of documenting my coding skills improvment.">
+	<!-- End Description -->
+
+	<!-- New Design Styles -->
+	<style>
+	body{font-family:Roboto}
+	a{color:#009688;text-decoration:none}
+	img{max-width:100%}
+	.dt{border:0px;float:left;width:110px}
+	.dt td{border-bottom:0px;height:50px}
+	.dt th{text-align:center !important}
+	#tp td,#tp th,#tv td,#tv th{padding-left:10px;padding-right:0}
+	.footer-container{float:right;display:flex;flex-direction:column}
+	.is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
+	.is-small-screen .advertisement{float:none;margin:10px auto;width:inherit}
+	.is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
+	.mdl-layout__content{flex-shrink:0}
+	.mdl-menu .mdl-menu__item{text-align:right}
+	.link{opacity:.8}
+	.link:hover{opacity:1}
+	.tab:hover{color:rgba(255,255,255,0.85)}
+	#logolink{position:absolute;padding:15px;top:0}
+	.is-small-screen #logolink{padding:5px}
+	.mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
+	#content{display:block;padding-bottom:130px}
+	.mdsection{max-width:800px;margin:0 auto;padding:30px}
+	.mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
+	@media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
+	.mdl-mini-footer__right-section i{font-size:13.3333px}
+	.mdl-card{margin:20px auto;display:inline-block;order:0;min-height:0}
+	.post-hr{border-top:1px solid rgba(0,0,0,.1)}
+	.is-small-screen .mdl-card{order:9}
+	</style>
+	<!-- End of Styles -->
+
+	</head>
+	<!-- Top Navigation -->
+	<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs mdl-layout--overlay-drawer-button mdl-layout--no-desktop-drawer-button">
+	<header class="mdl-layout__header mdl-layout__header--scroll">
+	 <div class="mdl-layout__header-row"><a id="logolink" href="index.html"><img id="logo" src="https://nalexcastaneda.github.io/images/My%20Portfolio.png" alt="logo" width="250" /></a></div>
+	 <div class="mdl-layout__header-row" id="toplinks">
+	 <div class="mdl-layout-spacer"></div>
+	 <nav class="mdl-navigation">
+	  <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="homelink" href="index.html"><i class="material-icons">home</i> Home</a><a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="worklink" href="works.html"  onclick="window.paypal();return false;"><i class="material-icons">work</i> My Works</a><a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="githublink" href="https://github.com/nalexcastaneda" ><i class="material-icons">code</i> GitHub</a>
+	  <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="contact" href="contact.html"><i class="material-icons">info</i> Contact</a>
+	  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-layout--large-screen-only" data-mdl-for="contactlink">
+	   <a href="contact.html">
+	 </nav>
+	</div>
+	</header>
+	<!-- Top Navigation End -->
+
+	<!-- Side Navigation for Mobile Devices -->
+	<div class="mdl-layout__drawer"><span class="mdl-layout-title">Navigation Menu</span><nav class="mdl-navigation">
+	 <a class="mdl-navigation__link mdl-navigation__link--icon" id="homelink" href="index.html" ><i class="material-icons">home</i> Portfolio <strong>Home</strong></a><a class="mdl-navigation__link mdl-navigation__link--icon" id="workslink" href="works.html"><i class="material-icons">work</i> My <strong>Works</strong></a><a class="mdl-navigation__link mdl-navigation__link--icon" id="githublink" href="https://github.com/nalexcastaneda" ><i class="material-icons">code</i> Visit me on <strong>GitHub</strong></a>
+	 <a id="contactlink" class="mdl-navigation__link mdl-navigation__link--icon" href="contact.html"><i class="material-icons">info</i> Contact me on<strong>Social Media</strong></a>
+	</nav></div>
+	<!-- End of side navigation -->
+
+	<!--Start of paragraphs-->
+	<section>
+		<p class="pgrph" id="Home"> Welcome to my Portfolio!<br>
+	  		Here you will find the projects I have developed and a gallery of my designs. If you are intersted in any of my works you can contact me in Social Media. 😉 
+	 	</p>
+	</section>
 	
-<!--Start of paragraphs-->
-<p class="pgrph" id="Home"> Welcome to my Portfolio!<br>
-  Here you will find the projects I have developed and a gallery of my designs. If you are intersted in any of my works you can contact me in Social Media. 😉 </p>
-	
-<!-- Number of visitors counter --> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="counter">
-  <blockquote>
-    <p><strong>
-    	<!-- Start of CuterCounter Code -->
-		<a href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hits.php?id=gupdncd&nd=6&style=16" border="0" alt="free counter"></a>
-		<!-- Endof CuterCounter Code -->
-	</strong></p>
-  </blockquote>
-</div>
+	<!-- Footer -->
+	<footer class="mdl-mini-footer"> 
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
+				
+				<div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">
+					Thanks for visiting my Portfolio
+				</div>
+			</div>
+		</div> 
+		<p>
+			<strong>
+		    	<!-- Start of CuterCounter Code -->
+					<div class="mdl-mini-footer__right-section"> <div class="mdl-logo">You are the visitor number: 
+						<a href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hits.php?id=gupdncd&nd=6&style=16" border="0" alt="free counter"></a>
+					</div>
+				<!-- End of CuterCounter Code -->
+			</strong>
+		</p>
+	</footer>
 </body>
 </html>
