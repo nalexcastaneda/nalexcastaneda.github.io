@@ -56,6 +56,12 @@
 	a{color:#3167bf;text-decoration:none}
 	img{max-width:100%}
 	.footer-container{float:right;display:flex;flex-direction:column}
+	#footer {
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+	}
 	.is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
 	.is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
 	.mdl-layout__content{flex-shrink:0}
@@ -132,21 +138,20 @@
 
 	<section class="mdl-layout__tab-panel mdsection is-active">
 		<p id="Home"> Welcome to my Portfolio!<br>
-	  		Here you will find the projects I have developed and a gallery of random photos and screenshots related. If you are intersted in any of my works you can find my contact info in the <a href="about.html">About</a> page. 😉 
+	  		Here you will find the projects I have developed and a gallery of random photos related to coding projects. If you are intersted in any of my works you can find my contact info in the <a href="about.html">About</a> page. 😉
 		</p>
 	</section>
-	
+
+
 	<!-- Footer Section -->
-	<footer class="mdl-mini-footer"> 
-		<div class="mdl-mini-footer__left-section">
-			<div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
+	<footer class="mdl-mini-footer" > <span> <div class="mdl-mini-footer__left-section"> <div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
 				
 				<div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">
 					Thanks for visiting my Portfolio
 				</div>
 			</div>
-		</div> 
-		<p>
+		</div> </span>
+		<span>
 			<strong>
 		    	<!-- Start of CuterCounter Code -->
 					<div class="mdl-mini-footer__right-section"> <div class="mdl-logo">You are the visitor number: 
@@ -154,7 +159,7 @@
 					</div>
 				<!-- End of CuterCounter Code -->
 			</strong>
-		</p>
+		</span>
 	</footer>
 </body>
 </html>
