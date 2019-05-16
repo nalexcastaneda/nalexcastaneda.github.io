@@ -52,16 +52,20 @@
 
 <!-- New Design Styles -->
 <style>
-body{font-family:Roboto}
+body{
+	font-family:Roboto;
+	margin:0;
+	padding:0;
+	height:100%;
+}
 a{color:#3167bf;text-decoration:none}
 img{max-width:100%}
-.footer-container{float:right;display:flex;flex-direction:column}
-#footer {
-	clear: both;
-	position: relative;
-	height: 40px;
-	margin-top: -40px;
 }
+#body {
+   padding:10px;
+   padding-bottom:100px;   /* Height of the footer */
+}
+.footer-container{float:right;display:flex;flex-direction:column}
 .is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
 .is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
 .mdl-layout__content{flex-shrink:0}
@@ -128,7 +132,7 @@ img{max-width:100%}
 						<a class="mdl-navigation__link mdl-navigation__link--icon" id="workslink" href="works.html">
 							<i class="	material-icons">photo</i> My <strong>Gallery</strong>
 						</a>
-						<a id="contactlink" class="mdl-navigation__link mdl-navigation__link--icon" href="contact.html"><i class="material-icons">info</i> About <strong>Me</strong>
+						<a id="aboutlink" class="mdl-navigation__link mdl-navigation__link--icon" href="about.html"><i class="material-icons">info</i> About <strong>Me</strong>
 						</a>
 					</nav>
 				</div>
@@ -136,13 +140,14 @@ img{max-width:100%}
 
 				<!--Start of paragraphs-->
 
-				<section class="mdl-layout__tab-panel mdsection is-active">
-					<p id="Home"> <a id="HeaderP">Welcome to Projects Section!</a><br>
+				<div id="page-container">
+				<div id="content-wrap">
+					<a id="HeaderP">Welcome to Projects Section!</a><br>
 						List of Projects:<br>
 						[Project 1]<br>
 						[Project 2]
-					</p>
-				</section>
+				</div>
+			</div>
 
 
 				<!-- Footer Section -->
