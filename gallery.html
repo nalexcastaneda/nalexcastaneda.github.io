@@ -52,15 +52,20 @@
 
 <!-- New Design Styles -->
 <style>
-body{font-family:Roboto}
+body{
+	font-family:Roboto;
+	margin:25;
+	padding:25;
+	height:100%;
+}
 a{color:#3167bf;text-decoration:none}
 img{max-width:100%}
+}
+#body {
+   padding:10px;
+   padding-bottom:100px;   /* Height of the footer */
+}
 .footer-container{float:right;display:flex;flex-direction:column}
-#footer {
-	clear: both;
-	position: relative;
-	height: 40px;
-	margin-top: -40px;
 }
 .is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
 .is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
@@ -136,15 +141,16 @@ img{max-width:100%}
 
 				<!--Start of paragraphs-->
 
-				<section class="mdl-layout__tab-panel mdsection is-active">
-					<p id="Home"> <a id="HeaderP">Welcome to Gallery Section!</a><br>
+				<div id="page-container">
+				<div id="content-wrap"> <a id="HeaderP">Welcome to Gallery Section!</a><br>
 						Photos Comming Soon!
 					</p>
-				</section>
+				</div>
+			</div>
 
 
 				<!-- Footer Section -->
-				<footer class="mdl-mini-footer" > <span> <div class="mdl-mini-footer__left-section"> <div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
+				<footer class="mdl-mini-footer" id="footer"> <span> <div class="mdl-mini-footer__left-section"> <div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
 
 					<div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">
 						Thanks for visiting my Portfolio
