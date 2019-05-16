@@ -52,11 +52,20 @@
 
 <!-- New Design Styles -->
 <style>
-body{font-family:Roboto}
+body{
+	font-family:Roboto;
+	margin:0;
+	padding:0;
+	height:100%;
+}
 a{color:#3167bf;text-decoration:none}
 img{max-width:100%}
+}
+#body {
+   padding:10px;
+   padding-bottom:100px;   /* Height of the footer */
+}
 .footer-container{float:right;display:flex;flex-direction:column}
-#footer {clear: both;position: relative;height: 40px;margin-top: -40px;}
 .is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
 .is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
 .mdl-layout__content{flex-shrink:0}
@@ -133,8 +142,9 @@ img{max-width:100%}
 
 				<!--Start of paragraphs-->
 
-				<section class="mdl-layout__tab-panel mdsection is-active">
-					<p id="#About"> <a id="HeaderP">Hello!</a> <br>
+				<div id="page-container">
+				<div id="content-wrap">
+					<a id="HeaderP">Hello!</a> <br>
 						I am Nestor and I am learning computer programming by myself. Also I will be posting here and in my <a href="github.com/nalexcastaneda">GitHub profile</a> the projects I have developed so far.
 						I am 18 years old, I live in Mexico, I just finished Highschool, I am a begginer programmer, I made this website all by myself using HTML5, JavaScript and CSS.<br>
 						I like Physics, Mathematics, Technology, Biology, Chemestry, Computer Science, and all Informatics related stuff.<br>
@@ -154,13 +164,14 @@ img{max-width:100%}
 						I will start learning other programming languages but for now those are the languages that I am focused on.<br>
 						<br>
 						If you want to contact me on Social Media for some reason I will put links bellow:<br>
-						<br><center>[Instagram link]	[Twitter Link]	[YouTube Link]	[Telegram Link]</center><br><br><br><br><br>
-					</p>
-				</section>
+						<br><center>[Instagram link]	[Twitter Link]	[YouTube Link]	[Telegram Link]</center>
+					
+				</div>
+			</div>
 
 
 				<!-- Footer Section -->
-				<footer class="mdl-mini-footer" id="footer"> <span> <div class="mdl-mini-footer__left-section"> <div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
+				 <footer class="mdl-mini-footer" id="footer"> <span> <div class="mdl-mini-footer__left-section"> <div class="mdl-logo">Copyright © 2019 <a>Nestor Alexander</a> 
 
 					<div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">
 						Thanks for visiting my Portfolio
@@ -170,7 +181,7 @@ img{max-width:100%}
 			<span>
 				<strong>
 					<!-- Start of CuterCounter Code -->
-					<div class="mdl-mini-footer__right-section"> <div class="mdl-logo">You are the visitor number: 
+					<div class="mdl-logo">You are the visitor number: 
 						<a><img src="http://www.cutercounter.com/hits.php?id=gupdncd&nd=6&style=16" border="0" alt="Visitors Counter"></a>
 					</div>
 					<!-- End of CuterCounter Code -->
