@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.top-header{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    color:rgb(235, 235, 235);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    max-height: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #263238;
+}
+.nav-a{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.nav-a li{
+    list-style: none;
+}
+.nav-a a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 4px;
+}
+.nav-a a:hover{
+    background-color: white;
+    color: black;
+}
