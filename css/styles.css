@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.top-header {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    color: rgb(235, 235, 235);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.top-header a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.top-header a:hover {
+    background-color: white;
+    color: black;
+    font-size: 35px;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    max-height: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #263238;
+}
+
+.nav-a {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.nav-a li {
+    list-style: none;
+}
+
+.nav-a a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.nav-a a:hover {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    display: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:650px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        justify-content: center;
+    }
+    .nav-a {
+        position: absolute;
+        left: 0px;
+        height: 92vh;
+        width: 70vw;
+        top: 8vh;
+        color: white;
+        background-color: #263238;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    .nav-a li {
+        color: white;
+        opacity: 0;
+    }
+    .burger {
+        position: absolute;
+        left: 15px;
+        cursor: pointer;
+    }
+    .burger div {
+        display: block;
+        cursor: pointer;
+    }
+    .top-header {
+        font-size: 18px;
+    }
+    .top-header a:hover {
+        font-size: 20px;
+    }
+}
+
+.active-nav {
+    transform: translateX(0%);
+}
+
+@keyframes navLinksAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
