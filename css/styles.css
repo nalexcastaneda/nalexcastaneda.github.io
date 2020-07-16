@@ -3,7 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
 a:visited {
     color: inherit;
 }
@@ -32,11 +37,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    max-height: 10vh;
+    width: 100vw;
+    min-height: 10vh;
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #263238;
+    position: fixed;
+    z-index: 1;
 }
 
 .nav-a {
@@ -72,13 +79,36 @@ nav {
     display: none;
     border-radius: 5px;
 }
+main{
+    position: absolute;
+    margin-top: 12vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    height: 100vh;
+    z-index: 0;
+}
+.main-wrapper{
+    border-style: solid;
+    border-color: #939799;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.active-nav {
+    transform: translateX(0%);
+}
 
 @media screen and (max-width:650px) {
     body {
         overflow-x: hidden;
     }
+    main{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
     nav {
         justify-content: center;
+        z-index: 1;
     }
     .nav-a {
         position: absolute;
@@ -115,8 +145,10 @@ nav {
     }
 }
 
-.active-nav {
-    transform: translateX(0%);
+@media screen and (max-width:300px) {
+    .top-header{
+        display: none;
+    }
 }
 
 @keyframes navLinksAnimation {
