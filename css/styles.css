@@ -9,10 +9,17 @@ h1{
 p{
     font-family: 'Roboto', sans-serif;
 }
+a:link {
+    color: inherit;
+  }
 a:visited {
     color: inherit;
 }
-
+.nav-a a:active {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
 .top-header {
     font-family: 'VT323', monospace;
     font-size: 30px;
@@ -94,10 +101,6 @@ main{
     border-radius: 10px;
     padding: 10px;
 }
-.active-nav {
-    transform: translateX(0%);
-}
-
 @media screen and (max-width:650px) {
     body {
         overflow-x: hidden;
@@ -160,4 +163,7 @@ main{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+.active-nav {
+    transform: translateX(0%);
 }
