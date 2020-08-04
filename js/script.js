@@ -7,7 +7,7 @@ const slideNav = () => {
         nav.classList.toggle('active-nav');
             //Links animation
     navLinks.forEach((link, index) => {
-        link.style.animation = `navLinksAnimation 0.5s ease backwards ${index / 7}s`;
+        link.style.animation = `navLinksAnimation 0.5s ease forwards ${index / 7}s`;
         console.log(index / 7 + 1);
     });
     });
