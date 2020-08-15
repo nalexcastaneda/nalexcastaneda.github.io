@@ -26,10 +26,10 @@
   }
 body{
     background-color: #383a59;
-    min-height: 140vh;
+    min-height: 150vh;
     overflow-x: hidden;
-    display: block;
-    position: relative;
+    display: flex;
+    position: absolute;
 }
 h1{
     font-family: 'Bebas Neue', cursive;
@@ -46,6 +46,11 @@ a:link {
   }
 a:visited {
     color: inherit;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
 }
 .nav-a a:active {
     background-color: white;
@@ -122,7 +127,7 @@ nav {
 main{
     position: absolute;
     margin-bottom: 0;
-    margin-top: 20vh;
+    margin-top: 15vh;
     max-height: 180vh;
     padding:5px 1vw 5vw 5vw;
     width: 98vw;
@@ -134,29 +139,51 @@ main{
     padding: 2%;
     margin-left: 4%;
     line-height: 22px;
-    width: 52vw;
+    width: 100vw;
     height: fit-content;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.2em;
 }
-.featuredhomepage{
-    margin-right: 0px;
-    display: inline-flex;
-    flex-direction: column;
-    position: absolute;
-    width: 40vw;
-    align-items: center;
+.intro{
+    display: block;
     justify-content: center;
+    text-align: center;
+    width: 80vw;
+    align-items: center;
 }
-.featuredhomepage img{
-    width: 25vw;
-    padding-right: 0px;
-    justify-content: space-around;
-    transition: ease-in .5s;
+.sections{
+    height: 100vh;
 }
-.featuredhomepage img:hover{
-    width: 28vw;
+.types{
+    text-align: left;
+    display: flex;
+    height: 80vh ;
+    width: 80vw;
+    line-height: 25px;
+    margin-bottom: 10vw 5vh 10vw 5vh;
+    justify-content: center;
+    vertical-align: middle;
+}
+.types img{
+    width: 40vw;
+    margin-left: 9vw;
+    transition: linear 1.3s;
+}
+.types img:hover{
+    width: 41vw;
+    margin-left: 9.5vw;
+    transform: rotateX(10deg);
+}
+.types ul{
+    width: 60vh;
+    list-style: inside;
+}
+.texts{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     text-align: center;
@@ -165,13 +192,13 @@ footer{
     padding: 50px;
     height: 20px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
-@media screen and (max-width:680px) {
+@media screen and (max-width:695px) {
     body {
         overflow-x: hidden;
         min-height: 190vh;
+        display: flex;
+        position: relative;
     }
     main{
         margin-top: 16vh;
@@ -219,17 +246,21 @@ footer{
     }
     .top-header a:hover {
         font-size: 20px;
+        margin-left: 0vw;
     }
-    .featuredhomepage{
-        display: flex;
-        width: 98vw;
+    .types{
+        display: block;
     }
-    .featuredhomepage img{
-        display: flex;
-        width: 40vw;
+    .types ul{
+        width: 80vw;
     }
-    .featuredhomepage img:hover{
-        width: 42vw;
+    .types img{
+        margin-top: 10%;
+        width: 90%;
+    }
+    .types img:hover{
+        margin-left: 0px;
+        width: 95%;
     }
 }
 
