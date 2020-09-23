@@ -65,10 +65,11 @@ nav {
     align-items: center;
     width: 100vw;
     min-height: 10vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: white;
     background-color: #282a36;
     position: fixed;
+    font-size: 22px;
     z-index: 1;
     box-shadow: 1px 0.5px 1px 0.5px rgba(80,250,123);
 }
@@ -83,7 +84,6 @@ nav {
 }
 .nav-a a {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     color: white;
     border-radius: 4px;
     transition: 0.5s;
@@ -91,7 +91,7 @@ nav {
 .nav-a a:hover {
     background-color: white;
     color: #282a36;
-    font-size: 18px;
+    font-size: 20px;
 }
 .burger div {
     width: 25px;
@@ -112,21 +112,23 @@ body{
     position: absolute;
 }
 h1{
-    font-family: 'Bebas Neue';
     color: white;
     height: fit-content;
     letter-spacing: 4px;
     line-height: 35px;
 }
 h2{
-    font-family: 'Bebas Neue';
     color: white;
     height: fit-content;
     letter-spacing: 4px;
     line-height: 35px;
+    font-family: 'Poppins', sans-serif;
 }
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
 }
 main{
     position: absolute;
@@ -146,11 +148,12 @@ main{
     text-align: center;
     justify-content: center;
     font-size: 1.5rem;
-    font-family: 'Bebas Neue';
     color: white;
     height: fit-content;
     letter-spacing: 4px;
     font-size: 8ch;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 #intro{
     margin: 4vh 0 4vh 0;
@@ -179,7 +182,7 @@ img{
     width: 500px;
     margin-right: 0px;
 }
-em{
+#highlight{
     cursor: pointer;
     font-size: 0.8em;
     padding: 5px;
@@ -188,7 +191,7 @@ em{
     background-color: white;
     transition: ease-in 0.3s;
 }
-em:hover{
+#highlight:hover{
     background-color: #50fa7b;
 }
 .linker{
@@ -199,13 +202,15 @@ em:hover{
     padding: 10px;
     margin: 120px 0 90px 0;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     font-size: 4vw;
     word-spacing: 10px;
     justify-content: center;
     text-align: center;
+    align-items: center;
     color: white;
+    vertical-align: middle;
 }
 .linker a{
     background-color: #50fa7b;
@@ -214,9 +219,18 @@ em:hover{
     color: #282a36;
     text-decoration: none;
     margin: 0 15px 0 15px;
+    transition: ease-out 0.2s;
+    position: relative;
+    animation: moving 2s infinite;
 }
 .linker a:hover{
     font-size: 1.02em;
+    transition: ease-out 0.2s;
+    position: relative;
+    animation: moving 2s infinite;
+}
+#d-link, #s-link{
+    line-height: 60px;
 }
 #static{
     display: flex;
@@ -239,7 +253,7 @@ em:hover{
 }
 section li{
     font-size: 0.8em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .img-container{
     width: 30em;
@@ -254,6 +268,7 @@ section li{
     justify-content: center;
     align-items: center;
     z-index: 3;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Mobile view queries*/
@@ -267,7 +282,7 @@ section li{
         padding: 0 25px 0 30px;
     }
 }
-@media screen and (max-width:695px) {
+@media screen and (max-width:900px) {
     body {
         overflow-x: hidden;
         min-height: 190vh;
@@ -347,3 +362,9 @@ section li{
 .active-nav {
     transform: translateX(0%);
 }}
+@keyframes moving {
+    0%   {rotate: 0deg;}
+    25%  {rotate: 2deg;}
+    75%  {rotate: 3deg}
+    100% {rotate: -2deg;}
+}
