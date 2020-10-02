@@ -168,6 +168,7 @@ main{
 .text{
     color: white;
     font-size: 175%;
+    font-family: 'Lato', sans-serif;
 }
 img{
     width: 615px;;
@@ -219,10 +220,10 @@ img{
 .linker a{
     background-color: #50fa7b;
     border-radius: 10px;
-    padding: 4px;
+    padding: 2px;
     color: #282a36;
     text-decoration: none;
-    margin: 0 15px 0 15px;
+    margin: 0 5px 0 5px;
     transition: ease-out 0.2s;
     position: relative;
     animation: moving 2s infinite;
@@ -235,6 +236,13 @@ img{
 }
 #d-link, #s-link{
     line-height: 60px;
+    transition: 0.5s;
+}
+#s-link:hover{
+    box-shadow: 2px 8px #50fa7a60;
+}
+#d-link:hover{
+    box-shadow: 2px 8px #50fa7a60;
 }
 #static{
     display: flex;
