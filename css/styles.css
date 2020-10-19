@@ -235,23 +235,15 @@ img{
     animation: moving 2s infinite;
 }
 #d-link, #s-link{
+    padding: 20px;
+    font-size: 4vw;
     line-height: 60px;
     transition: 0.5s;
 }
-#s-link:hover{
+#s-link:hover, #d-link:hover{
     box-shadow: 2px 8px #50fa7a60;
 }
-#d-link:hover{
-    box-shadow: 2px 8px #50fa7a60;
-}
-#static{
-    display: flex;
-    min-height: 100vh;
-    vertical-align: middle;
-    align-items: center;
-    align-content: center;
-}
-#dynamic{
+#static, #dynamic{
     display: flex;
     min-height: 100vh;
     vertical-align: middle;
