@@ -277,11 +277,7 @@ section li{
 
 /* Mobile view queries*/
 @media screen and (max-width:950px) {
-    #static{
-        display: block;
-        padding: 0 25px 0 30px;
-    }
-    #dynamic{
+    #static, #dynamic{
         display: block;
         padding: 0 25px 0 30px;
     }
@@ -344,6 +340,10 @@ section li{
     }
     .main-header{
         font-size: 4ch;
+    }
+    #d-link, #s-link{
+        padding: 0px;
+        font-size: 5vw;
     }
 /* Hide top header on very small screens */
 @media screen and (max-width:300px) {
