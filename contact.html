@@ -3,7 +3,7 @@
 
 <head>
 	<!--Themes Meta-->
-	<meta name="theme-color" content="#282a36"/>
+	<meta name="theme-color" content="#282a36" />
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#282a36">
 	<!-- Windows Phone -->
@@ -35,7 +35,8 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script async src="js/script.js"></script>
 </head>
 
@@ -62,7 +63,7 @@
 			</li>
 		</ul>
 	</nav>
-	
+
 	<main>
 		<div class="main-wrapper">
 			<section>
@@ -83,18 +84,28 @@
 						<a href="mailto:dev@alex0010.digital" class="fas fa-envelope-square"></a>
 					</div>
 					<div class="icons">
-						<a href="#" class="fab fa-twitter"></a>
+						<a href="https://twitter.com/nalexcastaneda1" class="fab fa-twitter"></a>
 					</div>
 					<div class="icons">
-						<a href="#" class="fab fa-telegram"></a>
+						<a href="https://t.me/Anthony_EdwardStark" class="fab fa-telegram"></a>
 					</div>
 					<div class="icons">
-						<a href="#" class="fab fa-discord"></a>
-					</div>	
+						<a id="discord" class="fab fa-discord"></a>
+					</div>
 				</div>
 			</section>
 
 		</div>
+		<script>
+			document.getElementById("discord").addEventListener("click", event => {
+				navigator.clipboard.writeText("alex0010#8590")
+					.then(() => {
+						window.alert("Copied Discord name!");
+					}, () => {
+						console.log("Unable to copy");
+					});
+			});
+		</script>
 </body>
 
 </html>
