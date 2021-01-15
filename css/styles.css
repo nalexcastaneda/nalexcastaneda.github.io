@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+li{
+    list-style: none;
+}
 /* width */
 *::-webkit-scrollbar {
     width: 10px;
@@ -24,6 +27,30 @@
   /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
     background: #50fa7b; 
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    margin: 1% 2% 1% 2%;
+    background-color: #2477F2;
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    text-align: center;
+    font-size: 350%;
+    border: solid white;
+    border-radius: 5px;
+    padding: 0.5%;
+}
+.icons:hover{
+    cursor: pointer;
+    background-color: #0066ff;
+}
+.icons a {
+    text-align: center;
+    text-decoration: none;
 }
 a:link {
     color: inherit;
@@ -106,7 +133,7 @@ nav {
 /* contents */
 body{
     background-color: #383a59;
-    min-height: 150vh;
+    min-height: 100vh;
     overflow-x: hidden;
     display: flex;
     position: absolute;
@@ -121,6 +148,7 @@ h2{
     text-align: center;
     margin-bottom: 20px;
     color: #282a36;
+    padding: 15px;
     height: fit-content;
     letter-spacing: 4px;
     line-height: 35px;
@@ -131,9 +159,7 @@ h2{
 p{
     font-family: 'Poppins', sans-serif;
 }
-ul{
-    list-style-image: url('.../images/checked.png');
-}
+
 main{
     position: absolute;
     margin-top: 15vh;
@@ -263,16 +289,9 @@ section li{
     width: 30em;
 }
 .footer{
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    min-height: 200px;
-    background-color: #282a36;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 3;
-    font-family: 'Lato', sans-serif;
+    min-height: 200px;
+    width: 100%;
 }
 
 /* Mobile view queries*/
@@ -345,6 +364,15 @@ section li{
         padding: 0px;
         font-size: 5vw;
     }
+    .social-media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+    }
+    .icons{
+        width: 70%;
+    }
+
 /* Hide top header on very small screens */
 @media screen and (max-width:300px) {
     .top-header{
